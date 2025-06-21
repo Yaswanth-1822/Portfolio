@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certifications & Achievements</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #00ffc8;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00ffc8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #00ffc8;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #ffff9e;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 40px 0 20px;
+      color: #00ffc8;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 30px 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #1b1f32;
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 255, 200, 0.1);
+      border-left: 4px solid #00ffc8;
+    }
+
+    .card i {
+      margin-right: 10px;
+      color: #00ffc8;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .grid-container {
+        padding: 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Certifications & Achievements</h1>
+
+  <div class="grid-container">
+    <div class="card"><i class="fa-solid fa-trophy"></i>Solved 300+ problems (220+ on Leetcode) and earned 50 Days Challenge, 100 Days Challenge.-Leetcode</div>
+    <div class="card"><i class="fa-solid fa-laptop-code"></i>Certificate of Completion in Responsive Web Design.- freecodecamp</div>
+    <div class="card"><i class="fa-solid fa-cloud"></i> Certificates in Python and JavaScript; Golden Badges for problem solving in Java and Python.-Hackerrank</div>
+    <div class="card"><i class="fa-solid fa-code"></i>Certificate Of Completion for CSS ,Bootstrap And JavaScript And python Stack Course – Udemy</div>
+    <div class="card"><i class="fa-solid fa-cloud-sun"></i>Certificate of Completion in Programming Foundations with JavaScript, HTML, and CSS.- Coursera</div>
+    <div class="card"><i class="fa-solid fa-lock"></i> HCI AND LEADERSHIP AND TEAM EFFECTIVENESS – NPTEL</div>
+    <div class="card"><i class="fa-solid fa-laptop-code"></i> IBM ML0101EN (edX)Machine Learning with Python: A Practical Introduction</div>
+  </div>
+
+</body>
+</html>

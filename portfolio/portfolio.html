@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 36px;
+      font-weight: bold;
+      color: #00f7a5;
+    }
+
+    .portfolio-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: #1e1e2f;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 255, 180, 0.3);
+    }
+
+    .project-title {
+      font-size: 20px;
+      color: #00ffbf;
+      margin-bottom: 10px;
+    }
+
+    .project-desc {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #00f7a5;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .project-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .section-title {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="portfolio">
+    <h3 class="section-title">Experiences</h3>
+    <div class="portfolio-container">
+      
+      <div class="project-card">
+        <h4 class="project-title">Event Management System</h4>
+        <p class="project-desc">
+          • Role: Full Stack Developer
+          • Technologies: Node.js, Express.js, MongoDB, JavaScript, HTML, CSS, Nodemailer.
+          • Built a dynamic web application for managing events, enabling user registration, event feedback, and dynamic
+          calendar functionality.
+          • Implemented OTP-based email verification and event registration confirmation using Nodemailer.
+          • Designed a responsive UI with event sliders, 3D effects, and dynamic event categorization (upcoming, ongoing,
+          completed).
+          • Developed RESTful APIs for user management, event handling, and feedback collection.
+          • Utilized MongoDB for scalable and reliable data storage and retrieval.
+          • Prevented duplicate event registrations by adding database-level validation checks.
+        </p>
+        <a href="https://github.com/Yaswanth-1822/Event-Management-System" class="project-link" target="_blank">🔗 View Project</a>
+      </div><div class="project-card">
+        <h4 class="project-title">Smart Food Waste Management System</h4>
+        <p class="project-desc">
+          
+      • Role: Full Stack Developer
+      • Technologies: React.js, Node.js, Express.js, MongoDB, Chart.js, Nodemailer, TensorFlow.js (for basic image classification), Cloudinary, React Datepicker
+
+      • Description:
+      • Built an AI-integrated web platform for streamlining food donations by validating, classifying, and redistributing excess food efficiently.
+      • Implemented an AI-powered image classifier to detect whether an uploaded item is food and assess its visual quality.
+      • Integrated a custom-built chatbot to assist users with creative reuse ideas and food-related suggestions if the item was flagged as non-donatable.
+      • Developed features for donation submission (homemade or packed), order assignment, and real-time status tracking for delivery personnel.
+      • Used Chart.js and analytics APIs to visualize weekly donations and top donor contributions on an interactive admin dashboard.
+      • Automated email notifications using Nodemailer to alert delivery agents when they are assigned an order.
+      • Dynamically managed delivery personnel availability based on order status (Assigned → In-Progress → Delivered).
+      • Designed intuitive UI with smart filters, search functionality, and responsive card layouts across donation, orders, and delivery management pages.
+      • Secured and optimized backend using RESTful APIs and Mongoose validation with proper role-based workflows.
+        </p>
+        <a href="https://github.com/Yaswanth-1822/FOOD-WASTE-MANAGEMENT" class="project-link" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h4 class="project-title">Nova - AI-Powered Virtual Assistant</h4>
+        <p class="project-desc">
+          
+• Role: Developer
+• Technologies: Python, PyQt, SpeechRecognition, pyttsx3, pyautogui, psutil, Gemini API integration.
+• Developed a desktop-based virtual assistant that automates daily tasks including email management,whatsapp
+control , multimedia control, file handling, and system operations,Browsing .
+• Implemented a hybrid system combining rule-based command execution with generative AI responses for queries
+outside predefined commands.
+• Designed an intuitive, interactive UI featuring a command sidebar, chat interface, and animated assistant avatar
+supporting both voice and text interactions.
+• Integrated robust error handling and fallback mechanisms to ensure seamless user experience.
+        </p>
+        <a href="https://github.com/Yaswanth-1822/NOVA-ASSISTANT" class="project-link" target="_blank">🔗 View on GitHub</a>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
